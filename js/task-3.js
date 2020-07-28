@@ -2,7 +2,7 @@
 
 const findBestEmployee = function (employees) {
   let bestEmployee = null;
-  let bestValue = Object.values(employees)[0];
+  let bestValue = 0;
 
   for (let key in employees) {
     if (bestValue <= employees[key]) {

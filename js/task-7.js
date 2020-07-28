@@ -42,7 +42,6 @@ const account = {
   },
 
   // Метод возвращает текущий баланс
-
   getBalance() {
     return `Балланс вашего аккаунта составляет: ${account.balance} грн`;
   },

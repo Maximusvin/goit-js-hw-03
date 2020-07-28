@@ -8,15 +8,11 @@ const products = [
 ];
 
 const calculateTotalPrice = function (allProdcuts, productName) {
-  let totalPrice = 0;
-
   for (const obj of allProdcuts) {
     if (obj.name === productName) {
-      totalPrice = obj.price * obj.quantity; // здесь можно было бы сразу прописать return, но что будет, если условие if не выполнится. Скорее всего - undefined.
+      return obj.price * obj.quantity;
     }
   }
-
-  return totalPrice;
 };
 
 // Проверка
