@@ -48,9 +48,9 @@ const account = {
 
   // Метод ищет и возвращает объект транзации по id
   getTransactionDetails(id) {
-    for (const obj of this.transactions) {
-      if (id === obj.id) {
-        return obj;
+    for (const item of this.transactions) {
+      if (id === item.id) {
+        return item;
       }
     }
   },
@@ -59,9 +59,9 @@ const account = {
   getTransactionTotal(type) {
     let totalSumoftype = 0;
 
-    for (const obj of this.transactions) {
-      if (type === obj.type) {
-        totalSumoftype += obj.amount;
+    for (const item of this.transactions) {
+      if (type === item.type) {
+        totalSumoftype += item.amount;
       }
     }
     return `Количество средств по транзакции ${type}: ${totalSumoftype} грн`;

@@ -6,6 +6,7 @@ const findBestEmployee = function (employees) {
 
   for (let key in employees) {
     if (bestValue <= employees[key]) {
+      bestValue = employees[key];
       bestEmployee = key;
     }
   }
